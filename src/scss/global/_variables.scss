@@ -1,0 +1,84 @@
+//***************** COLORS *********************//
+
+// PRIMARY :
+$white: #ffffff;
+$darkBlue: #161569;
+$whiteKc: #edf0f0;
+
+// SECONDARY
+$blueGrey: #2f3f80;
+$purpleBlue: #505488;
+$blueLagoon: #00b7d4;
+
+$gradientOriginal: linear-gradient(80.36deg,
+  #161569 -98.51%,
+  #2f3f80 -38.63%,
+  #505488 24.65%,
+  #00b7d4 118.41%);
+
+
+//***************** FONTS *********************//
+
+
+$montserrat: "Montserrat",
+sans-serif;
+
+
+//***************** BREAKPOINTS *********************//
+
+$tablet-up: 768px;
+$tablet-down: 767px;
+$desktop-height: 750px;
+$desktop-up: 1200px;
+$desktop-large: 1366px;
+
+
+//************************* MEDIA QUERIES *************************//
+
+
+@mixin tablet-up {
+  @media (min-width: $tablet-up) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @media (max-width: $tablet-down) {
+    @content;
+  }
+}
+
+@mixin desktop-min {
+  @media (min-width: 1024px) and (min-height: $desktop-height) and (orientation: landscape) {
+    @content;
+  }
+}
+
+
+@mixin desktop-up {
+  @media (min-width: $desktop-up) {
+    @content;
+  }
+}
+
+
+@mixin desktop-large {
+  @media (min-width: $desktop-large) {
+    @content;
+  }
+}
+
+
+
+
+
+
+
+//***************** MIXINS *********************//
+
+@mixin flexbox($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}

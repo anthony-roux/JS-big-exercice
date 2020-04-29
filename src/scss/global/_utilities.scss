@@ -1,0 +1,13 @@
+@function rem($size) {
+  $remSize: $size / 16px;
+
+  @return #{$remSize}rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
