@@ -7,3 +7,14 @@
 @import 'global/_typography.scss';
 @import 'global/_icons.scss';
 @import 'global/_cta.scss';
+
+.hello {
+  font-family: $montserrat;
+  color: $blueLagoon;
+  font-size: rem(100px);
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
