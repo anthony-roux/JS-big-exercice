@@ -40,8 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
 								<li>amet consectetur</li>
 							</ul>
 						</div>
-						<div class="parallax">
-						</div>
 						<div>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							<ul>
@@ -49,6 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
 								<li>dolor sit</li>
 								<li>amet consectetur</li>
 							</ul>
+						</div>
+						<div class="parallax">
 						</div>
 					`,
           dynamisme: () => {
