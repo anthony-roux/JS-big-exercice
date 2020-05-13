@@ -1,20 +1,27 @@
 // IMPORTATIONS DU DOSSIER GLOBAL
 
 @import 'global/_reset.scss';
-@import 'global/_utilities.scss';
-@import 'global/_variables.scss';
-@import 'global/_fonts.scss';
 @import 'global/_typography.scss';
+@import 'global/_variables.scss';
+@import 'global/_utilities.scss';
+@import 'global/_fonts.scss';
 @import 'global/_icons.scss';
 @import 'global/_cta.scss';
 
-.hello {
-  font-family: $montserrat;
-  color: $blueLagoon;
-  font-size: rem(100px);
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+@import 'components/_parallax.scss';
+
+// .hello {
+//   font-family: $montserrat;
+//   color: $blueLagoon;
+//   font-size: rem(40px);
+//   text-align: center;
+//   margin: 0 auto;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+.container {
+  padding: 24px;
 }
